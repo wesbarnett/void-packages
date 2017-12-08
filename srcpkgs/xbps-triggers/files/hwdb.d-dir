@@ -19,7 +19,7 @@ targets)
 	echo "post-install pre-remove"
 	;;
 run)
-    usr/bin/udevadm hwdb --update
+    usr/bin/udevadm hwdb --root=. --update
 	;;
 *)
 	exit 1
