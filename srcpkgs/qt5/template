@@ -1,7 +1,7 @@
 # Template file for 'qt5'
 pkgname=qt5
 version=5.8.0
-revision=10
+revision=11
 wrksrc="qt-everywhere-opensource-src-${version}"
 build_style=gnu-configure
 homepage="http://qt.io/"
@@ -222,6 +222,7 @@ do_configure() {
 	opts+=" -system-zlib"
 	opts+=" -system-sqlite"
 	opts+=" -system-harfbuzz"
+	opts+=" -proprietary-codecs"
 	# opts+=" -silent"
 	opts+=" -v"
 
